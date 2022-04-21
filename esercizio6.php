@@ -43,12 +43,15 @@
     
     for($i = 0; $i < count(array_values( $db )); $i++){
 
-        if(array_keys( $db[$i] ) ==='teachers'){
-            for($teacherIndex = 0; $teacherIndex < count(array_values( $db[$i] ) ); $teacherIndex++ ){
-                echo array_values($db[$i][$teacherIndex]['name']) 
+        if(array_keys( $db )[$i] ==='teachers'){
+            for($teacherIndex = 0; $teacherIndex < count(array_values($db)[$i] ); $teacherIndex++ ){
+                echo array_values($db)[$i][$teacherIndex]['name'] . " - " .array_values($db)[$i][$teacherIndex]['lastname'] . " " ;
             }
-        } elseif(array_keys([$db][$i]) === 'pm'){
-            
+
+        } elseif(array_keys( $db )[$i] === 'pm'){
+            for($pmIndex = 0; $pmIndex < count(array_values($db)[$i] ); $pmIndex++ ){
+                echo array_values($db)[$i][$pmIndex]['name'] . " - " .array_values($db)[$i][$pmIndex]['lastname'] . " " ;
+            }
         }
     };
     
