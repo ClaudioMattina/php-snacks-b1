@@ -46,11 +46,13 @@
         if(array_keys( $db )[$i] ==='teachers'){
             
             for($teacherIndex = 0; $teacherIndex < count(array_values($db)[$i] ); $teacherIndex++ ){
+                echo "<h1> insegnante</h1>";
                 echo  array_values($db)[$i][$teacherIndex]['name'] . " - " .array_values($db)[$i][$teacherIndex]['lastname'] . " <br> " ;
             }
 
         } elseif(array_keys( $db )[$i] === 'pm'){
             for($pmIndex = 0; $pmIndex < count(array_values($db)[$i] ); $pmIndex++ ){
+                echo "<h1> PM </h1>";
                 echo array_values($db)[$i][$pmIndex]['name'] . " - " .array_values($db)[$i][$pmIndex]['lastname'] . " <br> " ;
             }
         }
