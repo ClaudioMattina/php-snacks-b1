@@ -19,14 +19,21 @@
 
     <p>
         <?php
-
+            /* variabile vuota dove verranno inseriti i numeri randomici */
             $numbersArray=[];
-
+            /* ciclo while che dice "fino a che l'arrey interessato non arriva ad avere 15 elementi continua */
             while(count($numbersArray) < 15){
                 
+                /* crea un numero randomico da 0 a 100 */
                 $randomNumber = rand(0,100);
+
+                /* se il numero generato NON è già nell'array,  */
                 if(!in_array($randomNumber, $numbersArray)){
+                    
+                    /* allora inseriscicelo */
                     $numbersArray[] = $randomNumber;
+
+                    /* e stampa il numero generato */
                     echo $randomNumber . '<br>';
                 }
             }
