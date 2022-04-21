@@ -55,7 +55,7 @@
     <ul>
         <?php for($i = 0; $i < count($arrayPartite) ; $i++) { ?>
 
-        <li> <?php echo($arrayPartite[$i]["teamCasa"]. " - ". $arrayPartite[$i]["teamOspite"]. " - ". $arrayPartite[$i]["pointCasa"]. " - ". $arrayPartite[$i]["pointOspite"]     ) ?> </li>
+           <li> <?php echo($arrayPartite[$i]["teamCasa"]. " - ". $arrayPartite[$i]["teamOspite"]. " - ". $arrayPartite[$i]["pointCasa"]. " - ". $arrayPartite[$i]["pointOspite"]     ) ?> </li>
 
         <?php } ?>
     </ul>
